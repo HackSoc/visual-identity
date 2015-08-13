@@ -96,7 +96,7 @@ General Points
 --------------
 
  - If a new colour scheme is needed for whatever reason, the Adobe
-   [Colour wheel][] is really good.
+   [Color wheel][] is really good.
 
 ### Hypertext
 
