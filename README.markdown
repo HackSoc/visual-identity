@@ -23,8 +23,8 @@ Sans**:
  - **Sanchez** the tagline in the logo, and heading elements in body
      text.
 
-  - **Bitstream Vera Sans** body text, bolding may be used for
-      emphasis, but in general the font should be normal.
+ - **Bitstream Vera Sans** body text, bolding may be used for
+     emphasis, but in general the font should be normal.
 
 
 The meaning of "heading" is up to interpretation depending on the
