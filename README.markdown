@@ -47,7 +47,8 @@ There are five HackSoc colours:
 
  - **Emphasis** Highlight important information.
 
- - **De-emphasis** 
+ - **De-emphasis** Something which is necessary, but unimportant or
+     uninteresting.
 
 Use of colours doesn't have to strictly follow the above rules. For
 example, in the weekly poster template, Text and Sanchez are used for
@@ -57,6 +58,14 @@ document you are producing, however documents should be consistent
 with themselves, and preferably also with other media produced for the
 same campaign (for example, flyers and posters to advertise a single
 event).
+
+There are no hard rules for where to use de-emphasis. The website uses
+it for "At the University of York": obviously we're at UoY, but it's
+worth confirming for the people who might stumble across our website
+looking for something else. The weekly poster uses it for the URL
+fragment which isn't HackSoc specific in our social media links, like
+"twitter.com/". Hopefully that'll help you figure out the sort of
+things it's intended for.
 
 Below is a table of CMYK and RGB values. CMYK should be preferred when
 the result will be for print.
