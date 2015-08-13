@@ -1,0 +1,319 @@
+\documentclass[10pt,a4paper,oneside]{article}
+\pagestyle{headings}
+
+\usepackage{graphicx}
+\usepackage[margin=0.9in, top=0.7in]{geometry}
+\usepackage{ucs}
+\usepackage{multirow}
+\usepackage{tabularx}
+\usepackage{fontspec}
+\usepackage{adjustbox}
+\usepackage{titlesec}
+\usepackage{changepage}
+\usepackage{pdflscape}
+\usepackage{multicol}
+\usepackage{minted}
+\usepackage{hyperref}
+
+\setmonofont{Consolas}
+
+\author{Michael Walker}
+\title{HackSoc - the computer science society}
+
+\pagestyle{empty}
+\setmainfont{DejaVu Sans}
+
+\setlength{\parindent}{0cm}
+\setlength{\parskip}{1em}
+
+\titleformat*{\section}{\huge\fontspec{Sanchez Regular}}
+\titleformat*{\subsection}{\Large\fontspec{Sanchez Regular}}
+
+\titlespacing{\section}{0pt}{\parskip}{-\parskip}
+\titlespacing{\subsection}{0pt}{\parskip}{-\parskip}
+
+\newcolumntype{L}{>{\raggedright\arraybackslash\small}X}
+
+\newcommand{\event}[2]{\subsection*{#1 \hfill \textbf{\fontspec{DejaVu
+        Sans} \footnotesize #2}}}
+
+\begin{document}
+
+% %%%%% HackSoc Header
+
+\begin{adjustbox}{minipage=0.9\linewidth,center}
+  {\fontsize{2.75cm}{1em} \fontspec{Rokkitt} HackSoc}
+
+  \vspace{0.35cm}
+
+  \hfill {\fontsize{0.9cm}{1em} \fontspec{Sanchez Regular} the computer science society}
+\end{adjustbox}
+
+% %%%%% Icon Square
+
+\vspace{0.3cm}
+
+\begin{tabular}{llllllll}
+\multicolumn{1}{m{1cm}}{\includegraphics[width=1cm, height=1cm]{www-512.png}} &
+hacksoc.org &
+\multicolumn{1}{m{1cm}}{\includegraphics[width=1cm, height=1cm]{irc-512.png}} &
+freenode \#cs-york &
+\multicolumn{1}{m{1cm}}{\includegraphics[width=1cm, height=1cm]{facebook-512.png}} &
+/groups/hacksoc &
+\multicolumn{1}{m{1cm}}{\includegraphics[width=1cm, height=1cm]{twitter-512.png}} &
+@HackSoc
+\end{tabular}
+
+% %%%%% Welcome Letter
+
+\vspace{0.2cm}
+
+\section*{Welcome to York}
+
+\textbf{HackSoc} is the student-run society for Computer Science
+students. We're open to all members of the university, but we're more
+likely to be something \textit{you're} interested in, so welcome,
+potential member!
+
+We run a lot of events throughout the term, and are always trying out
+new things. We're excited to be introducing study groups this term,
+and a functional programming course in Spring term. We also have talks
+every three weeks, two of which will be given by invited industrial
+speakers next term, and at least two socials a week. All of our events
+are open to anyone, so feel free to come along to anything which takes
+your fancy.
+
+Why not get to know us before term starts? We're on Facebook, Twitter,
+and IRC. If you've never used IRC before, we have a little guide at
+\textbf{hacksoc.org/irc.html}
+
+See you next term!
+
+\vspace{-1cm}
+
+\begin{flushright}
+  {\Large — Michael Walker, HackSoc Chair}\\
+  {\small \textbf{barrucadu} on irc}
+\end{flushright}
+
+\vspace{0.6cm}
+
+% %%%%% Highlights
+
+\section*{What's on?}
+
+\event{Talks}{Weeks 3, 6, and 9}
+
+We have three invited speakers a term: two industrial and one
+academic. In addition to that, we also run lightning talk sessions
+where anyone can get up and present for five minutes.
+
+\vspace{0.1cm}
+
+\event{Study \& Reading Groups}{Fortnightly}
+
+Interested in cryptography? Computer vision? Distributed systems? Or
+maybe you just want to chat about some classic CS papers over
+biscuits. This term we're introducing study groups. We haven't decided
+exactly what we'll run yet, so keep an eye on the social media and
+website.
+
+\vspace{0.1cm}
+
+\event{Science Week}{Week 8}
+
+A large gathering of science societies is taking place next
+term\ldots{} a week-long series of talks and events, open to all,
+showcasing the different sciences available at York and how they are
+all connected. See \url{YorkScienceWeek.uk} for more information.
+
+\vspace{0.1cm}
+
+\subsection*{Regular Socials}
+
+We also have a lot of socials: pub trips every other Tuesday; every
+\textit{other} other Friday we're playing boardgames and eating cake;
+and every Wednesday we're having lunch in the Glasshouse (Langwith
+College bar). We also have occasional movie and video game nights.
+
+\pagebreak
+
+\begin{landscape}
+\begin{multicols}{3}
+
+\section*{Python 2 Cheatsheet}
+
+\renewcommand{\arraystretch}{1.5}
+
+\subsection*{Basics}
+
+\mintinline{python}|42|\\
+{\small The integer 42}
+
+\mintinline{python}|42.0|\\
+{\small The floating-point value 42}
+
+\mintinline{python}|"hello world"|\\
+{\small The string "hello world"}
+
+\mintinline{python}|u"hello world"|\\
+{\small  The unicode string "hello world"}
+
+\mintinline{python}|foo = bar|\\
+{\small \mintinline{python}|foo| takes on the value
+  \mintinline{python}|bar|}
+
+\mintinline{python}|import foo|\\
+{\small Import the module \mintinline{python}|foo|}
+
+\vspace{-0.25cm}
+\subsection*{Input/Output}
+
+\mintinline{python}|print foo|\\
+Print the value of \mintinline{python}|foo|
+
+\mintinline{python}|foo = input()|\\
+Read in a string, evaluate it, and store the result in
+\mintinline{python}|foo|. You probably shouldn't do this.
+
+\mintinline{python}|foo = raw_input()|\\
+Read in a string and store it in \mintinline{python}|foo|
+
+\mintinline{python}|f = open("path")|\\
+{\small Open the file at that path}
+
+\mintinline{python}|f.close()|\\
+{\small Close the open file}
+
+\mintinline{python}|f.read()|\\
+{\small Read the file contents into a string}
+
+\vspace{-0.25cm}
+\subsection*{Builtin Functions}
+
+\begin{tabularx}{6cm}{ccc}
+\mintinline{python}|abs()|&
+\mintinline{python}|dir()|&
+\mintinline{python}|len()|\\
+\mintinline{python}|all()|&
+\mintinline{python}|float()|&
+\mintinline{python}|map()|\\
+\mintinline{python}|any()|&
+\mintinline{python}|filter()|&
+\mintinline{python}|ord()|\\
+\mintinline{python}|bool()|&
+\texttt{\PYGdefault{n+nb}{help}\PYGdefault{p}{()}}&
+\mintinline{python}|range()|\\
+\mintinline{python}|chr()|&
+\mintinline{python}|int()|&
+\mintinline{python}|str()|
+\end{tabularx}
+
+\vspace{-0.25cm}
+\subsection*{Control Flow}
+
+\mintinline{python}|if ...: ... elif ...: ... else: ...|\\
+{\small Execute the first block of code with a true condition}
+
+\mintinline{python}|while ...: ...|\\
+{\small Execute the code until the condition is false}
+
+\mintinline{python}|for x in [...]: ...|\\
+{\small Execute the code once for every value in the list}
+
+\mintinline{python}|break| 
+{\small Exit the current loop}
+
+\mintinline{python}|continue| 
+{\small Skip to the next iteration}
+
+\vspace{-0.25cm}
+\subsection*{Lists}
+
+\begin{tabularx}{6cm}{lL}
+\multicolumn{2}{l}{For \mintinline{python}|a = [0,1,2,3,4,5]|,}\\
+%
+\mintinline{python}|len(a)| &
+6\\
+%
+\mintinline{python}|a[3]| &
+3\\
+%
+\mintinline{python}|a[-1]| &
+5\\
+%
+\mintinline{python}|a[1:]| &
+\mintinline{python}|[1,2,3,4,5]|\\
+%
+\mintinline{python}|a[2:4]| &
+\mintinline{python}|[2,3]|\\
+%
+\mintinline{python}|[x * 2 for x in a]| &
+\mintinline{python}|[0,2,4,6,8,10]|\\
+%
+\mintinline{python}|[x for x in a if x < 3]| &
+\mintinline{python}|[0,1,2]|
+\end{tabularx}
+
+\vspace{-0.25cm}
+\subsection*{Dictionaries}
+
+\begin{tabularx}{6cm}{lL}
+\multicolumn{2}{l}{For \mintinline{python}|a = {"a": 1, "b": 2}|,}\\
+%
+\mintinline{python}|a.keys()| &
+\mintinline{python}|["a", "b"]|\\
+%
+\mintinline{python}|a.values()| &
+\mintinline{python}|[1, 2]|\\
+%
+\mintinline{python}|a.items()| &
+\mintinline{python}|[("a", 1), ("b", 2)]|\\
+%
+\mintinline{python}|a["a"]| &
+1
+\end{tabularx}
+
+\vspace{-0.25cm}
+\subsection*{Functions}
+
+\begin{minted}{python}
+def foo(a, b="apples"):
+    return "I have {} {}.".format(a, b)
+\end{minted}
+\begin{verbatim}
+>>> foo(5)
+I have 5 apples.
+>>> foo(5, b="pears")
+I have 5 pears.
+\end{verbatim}
+
+\begin{minted}{python}
+def bar(*args, **kwargs):
+    print str(args) + " and " + str(kwargs)
+\end{minted}
+\begin{verbatim}
+>>> bar(1, 2, 3, hello="world")
+(1, 2, 3) and {'hello': 'world'}
+\end{verbatim}
+
+\vspace{-0.25cm}
+\subsection*{Classes \& Methods}
+
+\begin{minted}{python}
+class Foo(object):
+    def __init__(self, x):
+        self.x = x
+
+    def xTimesTwo(self):
+        return self.x * 2
+\end{minted}
+\begin{verbatim}
+>>> foo = Foo(5)
+>>> foo.xTimesTwo()
+10
+\end{verbatim}
+\end{multicols}
+\end{landscape}
+
+\end{document}
