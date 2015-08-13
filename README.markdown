@@ -111,8 +111,8 @@ General Points
 
  - The colour Emphasis should be used for hyperlinks.
 
- - Web Fonts should be used to ensure correct display. All of the
-   HackSoc fonts are available through [Google Web Fonts][].
+ - Web Fonts should be used to ensure correct display. Rokkit and
+   Sanchez are available through [Google Web Fonts][].
 
 ## Posters, Flyers, Slides, etc
 
