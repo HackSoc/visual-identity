@@ -14,14 +14,13 @@ identity for marketing purposes. There are a number of subdirectories:
 Fonts
 -----
 
-The HackSoc fonts are **Rokkit**, **Sanchez**, and **Bitstream Vera
-Sans**:
+The HackSoc fonts are **Roboto Slab Regular**, **Sanchez**, and
+**Bitstream Vera Sans**:
 
- - **Rokkit** the name of the society in the logo, and should not be
-     used elsewhere.
+ - **Roboto Slab Regular** the name of the society and tagline in the
+   logo, and should not be used elsewhere.
 
- - **Sanchez** the tagline in the logo, and heading elements in body
-     text.
+ - **Sanchez** heading elements in body text.
 
  - **Bitstream Vera Sans** body text, bolding may be used for
      emphasis, but in general the font should be normal.
@@ -50,6 +49,9 @@ There are five HackSoc colours:
  - **De-emphasis** Something which is necessary, but unimportant or
      uninteresting.
 
+There are two additional colours for use with the logo - Logo Text and
+Logo Emphasis.
+
 Use of colours doesn't have to strictly follow the above rules. For
 example, in the weekly poster template, Text and Sanchez are used for
 day and week names, despite them acting as headings, with event titles
@@ -62,44 +64,53 @@ event).
 There are no hard rules for where to use de-emphasis. The website uses
 it for "At the University of York": obviously we're at UoY, but it's
 worth confirming for the people who might stumble across our website
-looking for something else. The weekly poster uses it for the URL
-fragment which isn't HackSoc specific in our social media links, like
-"twitter.com/". Hopefully that'll help you figure out the sort of
-things it's intended for.
+looking for something else. Hopefully that'll help you figure out the 
+sort of things it's intended for.
 
 Below is a table of CMYK and RGB values. CMYK should be preferred when
 the result will be for print.
 
-   Colour   |     (R,G,B)     |    (C,M,Y,K)
-------------|-----------------|-----------------
-Background  | (255, 217, 204) | ( 0, 15, 20,  0)
-Text        | ( 33,  33,  33) | ( 0,  0,  0, 87)
-Heading     | ( 64,  72,  84) | (24, 14,  0, 67)
-Emphasis    | ( 38,  78, 135) | (72, 42,  0, 47)
-De-emphasis | ( 84,  84,  84) | ( 0,  0,  0, 67)
+   Colour         |     (R,G,B)     |    (C,M,Y,K)
+------------------|-----------------|-----------------
+Background        | (243, 242, 244) | ( 0,  1,  0,  4)
+Text              | ( 33,  33,  33) | ( 0,  0,  0, 87)
+Heading           | ( 64,  72,  84) | (24, 14,  0, 67)
+Emphasis          | ( 38,  78, 135) | (72, 42,  0, 47)
+De-emphasis       | ( 84,  84,  84) | ( 0,  0,  0, 67)
+Logo Text         | ( 68,  68,  68) | ( 0,  0,  0, 73)
+Logo Emphasis     | ( 68,  55,  82) | (17, 33,  0, 68)
 
 Logo
 ----
+The HackSoc logo is formed of two parts: the Lambda mark and the logo
+text.
 
-The HackSoc logo consists of the text "HackSoc" (with that
-capitalisation) in the font Rokkit and colour Text. In the line below
-it, the text "the computer science society" in the font Sanchez and
-colour Text, except for "computer science" which is in colour
-Emphasis.
+### Lambda mark
+The Lambda mark is the core visual representation of the society;
+other parts of the the logo should not be included without it. The
+colours should not be modified from the logo image file.
 
-Relative font sizes are chosen such that the "y" in "society" is below
-the serif of the "c" in "HackSoc", and the "t" in "the" is below the
-gap between the "H" and "a" of "HackSoc".
+### Logo text
+The logo text is displayed to the right of the Lambda mark, and
+consists of the text "HackSoc" (with that capitalisation) in the font
+Roboto Slab Regular and colour Logo Text. In the tagline below it, the
+text "the computer science society" in the same font and colour,
+except for "computer science" which is in colour Logo Emphasis.
 
-Or, in pictures:
+The two lines should be of equal length - if this is not possible then
+the tagline should be shorter than the name. Font sizes of 7em and 2em
+are recommended for the name and tagline respectively.
 
-![HackSoc Logo](logo-for-readme.png)
+If there is not space for the full logo to be displayed (or if the
+logo text would be too small to read), then the Lambda mark may be
+used on its own. The logo text should never be used on its own.
 
-The logo should not be modified. There is a small version which omits
-the tagline which should be used if the logo will be displayed too
-small to read it. If the logo needs to be used on something with a
-dark background, or in some other context where it looks suboptimal,
-consult IRC and we shall produce a new official variant.
+![HackSoc Logo](logo-for-readme.png) <!-- TODO update this logo -->
+
+The logo should not be modified. If the symbol or logo needs to be
+used on something with a dark background, or in some other context
+where it looks suboptimal, consult #hacksoc on IRC or email
+hack@yusu.org and we shall produce a new official variant.
 
 General Points
 --------------
@@ -111,7 +122,7 @@ General Points
 
  - The colour Emphasis should be used for hyperlinks.
 
- - Web Fonts should be used to ensure correct display. Rokkit and
+ - Web Fonts should be used to ensure correct display. Roboto Slab and
    Sanchez are available through [Google Web Fonts][].
 
 ## Posters, Flyers, Slides, etc
@@ -135,7 +146,7 @@ General Points
  - If the profile picture is displayed at a sufficient size for the
    logo tagline to be read *clearly* then the full version should be
    used. In the much more likely case that it's not, the small logo
-   should be used.
+   (just the Lambda mark) should be used.
 
  - The profile picture should be of the appropriate shape (probably
    square), of the colour Background, with the logo centred both
