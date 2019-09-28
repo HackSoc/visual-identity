@@ -70,15 +70,15 @@ sort of things it's intended for.
 Below is a table of CMYK and RGB values. CMYK should be preferred when
 the result will be for print.
 
-   Colour         |     (R,G,B)     |    (C,M,Y,K)
-------------------|-----------------|-----------------
-Background        | (243, 242, 244) | ( 0,  1,  0,  4)
-Text              | ( 33,  33,  33) | ( 0,  0,  0, 87)
-Heading           | ( 64,  72,  84) | (24, 14,  0, 67)
-Emphasis          | ( 38,  78, 135) | (72, 42,  0, 47)
-De-emphasis       | ( 84,  84,  84) | ( 0,  0,  0, 67)
-Logo Text         | ( 68,  68,  68) | ( 0,  0,  0, 73)
-Logo Emphasis     | ( 68,  55,  82) | (17, 33,  0, 68)
+   Colour         |     (R,G,B)     |   Hex   |     (C,M,Y,K)
+------------------|-----------------|---------|------------------
+Background        | (243, 242, 244) | #F3F2F4 | ( 0,  1,  0,  4)
+Text              | ( 33,  33,  33) | #212121 | ( 0,  0,  0, 87)
+Heading           | ( 64,  72,  84) | #404854 | (24, 14,  0, 67)
+Emphasis          | ( 38,  78, 135) | #264E87 | (72, 42,  0, 47)
+De-emphasis       | ( 84,  84,  84) | #545454 | ( 0,  0,  0, 67)
+Logo Text         | ( 68,  68,  68) | #444444 | ( 0,  0,  0, 73)
+Logo Emphasis     | ( 68,  55,  82) | #443752 | (17, 33,  0, 68)
 
 Logo
 ----
